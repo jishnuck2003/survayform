@@ -9,77 +9,78 @@
     <h1 align="center" style="color: white;"> SURVEY FORM</h1>
 
     <form action="">
-        <fieldset align="center" style="background-color: white;">
-            <div>
-                <br>
-                <p  align="center">Let us know how we can improve</p>
-                <br>
-                <div>
-                    <label for="nametext">*Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Name">
-                </div>
-                <br>
-                <div>
-                    <label for="e-mail">*Email:</label>
-                    <input type="email" id="e-mail" name="email" placeholder="Enter Your Email ">
-                </div>
-                <br>
-                <div>
-                    <label for="age">*Age:</label>
-                    <input type="number" id="age" name="Age" placeholder=" Age ">
-                </div>
-                <br>
-                <div>
-                        <input type="file" >
-                </div>
-                <br>
-                <label for="role">Which option best describes your currunt role?</label>
-                <select name="role" id="role">
-                    <option value="" disabled selected>select role..</option>
-                    <option value="student">Student</option>
-                    <option value="fresher">Fresher</option>
-                    <option value="working">Working</option>
-                    <option value="freelancer">Freelancer</option>
-                </select> 
-                <br>
-                <label for="">*How likely is that you would reccomment this program to a friend?</label>
-                <input type="radio" id="Defenitely" name="reccomment" value="Defenitely">Defenitely <br>
-                <input type="radio" id="Maybe" name="reccomment" value="Maybe">Maybe <br>
-                <input type="radio" id="Notsure" name="reccomment" value="Notsure">Notsure <br>
-                <br>
-
-                <div>
-                    <label for="like">What do you like most here</label>
-                    <select name="like" id="like">
+        <fieldset style="background-color: white;">
+            <p  align="center">Let us know how we can improve</p>
+            <table align="center">
+                <tr>
+                    <td align="right"><label for="nametext">*Name:&nbsp;&nbsp;</label> <br><br></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="e-mail">*Email:&nbsp;&nbsp;   </label><br><br></td>
+                    <td><input type="email" id="e-mail" name="email" placeholder="Enter Your Email "><br><br></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="age">*Age:&nbsp;&nbsp;   </label><br><br></td>
+                    <td><input type="number" id="age" name="Age" placeholder=" Age "><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="file" ><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="role">Which option best describes your currunt role?</label><br><br></td>
+                        <td><select name="role" id="role">
+                            <option value="" disabled selected>select role..</option>
+                            <option value="student">Student</option>
+                            <option value="fresher">Fresher</option>
+                            <option value="working">Working</option>
+                            <option value="freelancer">Freelancer</option>
+                        </select><br><br></td>
+                </tr>
+                
+                <tr >
+                    <td rowspan="3"><label for="">*How likely is that you would reccomment <br> this program to a friend?</label><br><br></td>
+                    <td><input type="radio" id="Defenitely" name="reccomment" value="Defenitely">Defenitely </td>    
+                </tr>
+                <td><input type="radio" id="Maybe" name="reccomment" value="Maybe">Maybe </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Notsure" name="reccomment" value="Notsure">Notsure <br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="like">What do you like most here</label><br><br></td>
+                    <td><select name="like" id="like">
                         <option value="" disabled selected>select an <option value=""></option></option>
                         <option value="sports">Sports</option>
                         <option value="music">Music</option> 
                         <option value="reading">Reading</option> 
                         <option value="traveling">Traveling</option>
-                    </select> 
-                    <br>
-                </div>
-                <br>
-                <div>
-                    <label for="">This should be improved in the future <br>
-                        (check all that apply) </label><br>
-                        <label><input type="checkbox" name="project" value="Front-end projects">Front-end projects </label><br> 
-                        <label><input type="checkbox" name="project" value="Back-end projects">Back-end projects </label><br> 
-                        <label><input type="checkbox" name="project" value="Data Visualisation"> Data Visualisation</label><br>
-                </div>
-                <br>
-                <div>
-                    <label for="">Any comments or Suggetions?</label>
-                    <textarea style="height: 30%; width: 20%;" name="comments" id="comments"placeholder="Enter your comments here..."></textarea>
-                
-                </div>
-                <br>
-                <br>
-                <div>
-                    <input type="submit" style="background-color: skyblue; color: antiquewhite;" >
-                </div>
+                    </select> <br><br></td>    
+                </tr>
+                <tr>
+                    <td rowspan="3"><label for="">This should be improved in the future <br>
+                        (check all that apply) </label><br><br></td>
+                        <td><label><input type="checkbox" name="project" value="Front-end projects">Front-end projects </label><br> </td>
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" name="project" value="Back-end projects">Back-end projects </label></td>
+                </tr>
+                <tr>
+                    <td> <label><input type="checkbox" name="project" value="Data Visualisation"> Data Visualisation</label><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Any comments or Suggetions?</label></td>
+                    <td><textarea style="height: 30%; width: 20%;" name="comments" id="comments"placeholder="Enter your comments here..."></textarea></td>
+                </tr>
+
+            </table>
+            <br>
+            <div align="center">
+                <input type="submit" style="background-color: skyblue; color: antiquewhite;" >
             </div>
+
         </fieldset>
     </form>
+    
 </body>
 </html>
